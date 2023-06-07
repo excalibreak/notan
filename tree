@@ -1,0 +1,459 @@
+notan v0.10.0 (/home/user/projects/notan)
+├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app)
+│   ├── bytemuck v1.13.1
+│   ├── downcast-rs v1.2.0
+│   ├── futures-core v0.3.28
+│   ├── futures-util v0.3.28
+│   │   ├── futures-core v0.3.28
+│   │   ├── futures-macro v0.3.28 (proc-macro)
+│   │   │   ├── proc-macro2 v1.0.59
+│   │   │   │   └── unicode-ident v1.0.7
+│   │   │   ├── quote v1.0.28
+│   │   │   │   └── proc-macro2 v1.0.59 (*)
+│   │   │   └── syn v2.0.18
+│   │   │       ├── proc-macro2 v1.0.59 (*)
+│   │   │       ├── quote v1.0.28 (*)
+│   │   │       └── unicode-ident v1.0.7
+│   │   ├── futures-task v0.3.28
+│   │   ├── pin-project-lite v0.2.9
+│   │   ├── pin-utils v0.1.0
+│   │   └── slab v0.4.8
+│   │       [build-dependencies]
+│   │       └── autocfg v1.1.0
+│   ├── hashbrown v0.13.2
+│   │   └── ahash v0.8.3
+│   │       ├── cfg-if v1.0.0
+│   │       └── once_cell v1.17.1
+│   │       [build-dependencies]
+│   │       └── version_check v0.9.4
+│   ├── indexmap v1.9.3
+│   │   └── hashbrown v0.12.3
+│   │   [build-dependencies]
+│   │   └── autocfg v1.1.0
+│   ├── log v0.4.17
+│   │   └── cfg-if v1.0.0
+│   ├── notan_core v0.10.0 (/home/user/projects/notan/crates/notan_core)
+│   ├── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics)
+│   │   ├── bytemuck v1.13.1
+│   │   ├── crevice_notan v0.13.0
+│   │   │   ├── bytemuck v1.13.1
+│   │   │   ├── crevice_notan-derive v0.13.0 (proc-macro)
+│   │   │   │   ├── proc-macro2 v1.0.59 (*)
+│   │   │   │   ├── quote v1.0.28 (*)
+│   │   │   │   └── syn v1.0.109
+│   │   │   │       ├── proc-macro2 v1.0.59 (*)
+│   │   │   │       ├── quote v1.0.28 (*)
+│   │   │   │       └── unicode-ident v1.0.7
+│   │   │   ├── glam v0.24.0
+│   │   │   │   ├── bytemuck v1.13.1
+│   │   │   │   └── mint v0.5.9
+│   │   │   └── mint v0.5.9
+│   │   ├── image v0.24.6
+│   │   │   ├── bytemuck v1.13.1
+│   │   │   ├── byteorder v1.4.3
+│   │   │   ├── color_quant v1.1.0
+│   │   │   ├── jpeg-decoder v0.3.0
+│   │   │   ├── num-rational v0.4.1
+│   │   │   │   ├── num-integer v0.1.45
+│   │   │   │   │   └── num-traits v0.2.15
+│   │   │   │   │       └── libm v0.2.6
+│   │   │   │   │       [build-dependencies]
+│   │   │   │   │       └── autocfg v1.1.0
+│   │   │   │   │   [build-dependencies]
+│   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   [build-dependencies]
+│   │   │   │   └── autocfg v1.1.0
+│   │   │   ├── num-traits v0.2.15 (*)
+│   │   │   └── png v0.17.7
+│   │   │       ├── bitflags v1.3.2
+│   │   │       ├── crc32fast v1.3.2
+│   │   │       │   └── cfg-if v1.0.0
+│   │   │       ├── flate2 v1.0.25
+│   │   │       │   ├── crc32fast v1.3.2 (*)
+│   │   │       │   └── miniz_oxide v0.6.2
+│   │   │       │       └── adler v1.0.2
+│   │   │       └── miniz_oxide v0.6.2 (*)
+│   │   ├── notan_macro v0.10.0 (proc-macro) (/home/user/projects/notan/crates/notan_macro)
+│   │   │   ├── glsl-to-spirv v0.1.7
+│   │   │   │   └── tempfile v3.4.0
+│   │   │   │       ├── cfg-if v1.0.0
+│   │   │   │       ├── fastrand v1.9.0
+│   │   │   │       └── rustix v0.36.9
+│   │   │   │           ├── bitflags v1.3.2
+│   │   │   │           ├── io-lifetimes v1.0.5
+│   │   │   │           │   └── libc v0.2.139
+│   │   │   │           ├── libc v0.2.139
+│   │   │   │           └── linux-raw-sys v0.1.4
+│   │   │   │   [build-dependencies]
+│   │   │   │   ├── cmake v0.1.49
+│   │   │   │   │   └── cc v1.0.79
+│   │   │   │   │       └── jobserver v0.1.26
+│   │   │   │   │           └── libc v0.2.139
+│   │   │   │   └── sha2 v0.7.1
+│   │   │   │       ├── block-buffer v0.3.3
+│   │   │   │       │   ├── arrayref v0.3.6
+│   │   │   │       │   └── byte-tools v0.2.0
+│   │   │   │       ├── byte-tools v0.2.0
+│   │   │   │       ├── digest v0.7.6
+│   │   │   │       │   └── generic-array v0.9.1
+│   │   │   │       │       └── typenum v1.16.0
+│   │   │   │       └── fake-simd v0.1.2
+│   │   │   ├── num v0.4.0
+│   │   │   │   ├── num-bigint v0.4.3
+│   │   │   │   │   ├── num-integer v0.1.45
+│   │   │   │   │   │   └── num-traits v0.2.15
+│   │   │   │   │   │       [build-dependencies]
+│   │   │   │   │   │       └── autocfg v1.1.0
+│   │   │   │   │   │   [build-dependencies]
+│   │   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   │   [build-dependencies]
+│   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   ├── num-complex v0.4.3
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   ├── num-integer v0.1.45 (*)
+│   │   │   │   ├── num-iter v0.1.43
+│   │   │   │   │   ├── num-integer v0.1.45 (*)
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   │   [build-dependencies]
+│   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   ├── num-rational v0.4.1
+│   │   │   │   │   ├── num-bigint v0.4.3 (*)
+│   │   │   │   │   ├── num-integer v0.1.45 (*)
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   │   [build-dependencies]
+│   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   ├── proc-macro2 v1.0.59 (*)
+│   │   │   ├── quote v1.0.28 (*)
+│   │   │   ├── spirv_cross v0.23.1
+│   │   │   │   [build-dependencies]
+│   │   │   │   └── cc v1.0.79 (*)
+│   │   │   └── syn v2.0.18 (*)
+│   │   │   [build-dependencies]
+│   │   │   └── cfg_aliases v0.1.1
+│   │   ├── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math)
+│   │   │   └── glam v0.24.0 (*)
+│   │   ├── notan_utils v0.10.0 (/home/user/projects/notan/crates/notan_utils)
+│   │   │   ├── instant v0.1.12
+│   │   │   │   └── cfg-if v1.0.0
+│   │   │   └── log v0.4.17 (*)
+│   │   └── parking_lot v0.12.1
+│   │       ├── lock_api v0.4.9
+│   │       │   └── scopeguard v1.1.0
+│   │       │   [build-dependencies]
+│   │       │   └── autocfg v1.1.0
+│   │       └── parking_lot_core v0.9.7
+│   │           ├── cfg-if v1.0.0
+│   │           ├── libc v0.2.139
+│   │           └── smallvec v1.10.0
+│   ├── notan_input v0.10.0 (/home/user/projects/notan/crates/notan_input)
+│   │   ├── hashbrown v0.13.2 (*)
+│   │   ├── log v0.4.17 (*)
+│   │   ├── notan_core v0.10.0 (/home/user/projects/notan/crates/notan_core)
+│   │   └── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+│   ├── notan_macro v0.10.0 (proc-macro) (/home/user/projects/notan/crates/notan_macro) (*)
+│   ├── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+│   ├── notan_utils v0.10.0 (/home/user/projects/notan/crates/notan_utils) (*)
+│   ├── parking_lot v0.12.1 (*)
+│   └── platter2 v0.1.6
+│       └── futures-util v0.3.28 (*)
+├── notan_backend v0.10.0 (/home/user/projects/notan/crates/notan_backend)
+│   └── notan_winit v0.10.0 (/home/user/projects/notan/crates/notan_winit)
+│       ├── glutin v0.30.8
+│       │   ├── bitflags v1.3.2
+│       │   ├── glutin_egl_sys v0.5.0
+│       │   │   [build-dependencies]
+│       │   │   └── gl_generator v0.14.0
+│       │   │       ├── khronos_api v3.1.0
+│       │   │       ├── log v0.4.17
+│       │   │       │   └── cfg-if v1.0.0
+│       │   │       └── xml-rs v0.8.4
+│       │   ├── glutin_glx_sys v0.4.0
+│       │   │   └── x11-dl v2.21.0
+│       │   │       ├── libc v0.2.139
+│       │   │       └── once_cell v1.17.1
+│       │   │       [build-dependencies]
+│       │   │       └── pkg-config v0.3.26
+│       │   │   [build-dependencies]
+│       │   │   └── gl_generator v0.14.0 (*)
+│       │   ├── libloading v0.7.4
+│       │   │   └── cfg-if v1.0.0
+│       │   ├── once_cell v1.17.1
+│       │   ├── raw-window-handle v0.5.2
+│       │   ├── wayland-sys v0.30.1
+│       │   │   ├── dlib v0.5.0
+│       │   │   │   └── libloading v0.7.4 (*)
+│       │   │   ├── lazy_static v1.4.0
+│       │   │   └── log v0.4.17 (*)
+│       │   │   [build-dependencies]
+│       │   │   └── pkg-config v0.3.26
+│       │   └── x11-dl v2.21.0 (*)
+│       │   [build-dependencies]
+│       │   └── cfg_aliases v0.1.1
+│       ├── glutin-winit v0.3.0
+│       │   ├── glutin v0.30.8 (*)
+│       │   ├── raw-window-handle v0.5.2
+│       │   └── winit v0.28.6
+│       │       ├── bitflags v1.3.2
+│       │       ├── instant v0.1.12 (*)
+│       │       ├── libc v0.2.139
+│       │       ├── log v0.4.17 (*)
+│       │       ├── mio v0.8.6
+│       │       │   ├── libc v0.2.139
+│       │       │   └── log v0.4.17 (*)
+│       │       ├── once_cell v1.17.1
+│       │       ├── percent-encoding v2.2.0
+│       │       ├── raw-window-handle v0.5.2
+│       │       ├── sctk-adwaita v0.5.3
+│       │       │   ├── ab_glyph v0.2.20
+│       │       │   │   ├── ab_glyph_rasterizer v0.1.8
+│       │       │   │   └── owned_ttf_parser v0.18.1
+│       │       │   │       └── ttf-parser v0.18.1
+│       │       │   ├── log v0.4.17 (*)
+│       │       │   ├── memmap2 v0.5.10
+│       │       │   │   └── libc v0.2.139
+│       │       │   ├── smithay-client-toolkit v0.16.0
+│       │       │   │   ├── bitflags v1.3.2
+│       │       │   │   ├── calloop v0.10.5
+│       │       │   │   │   ├── log v0.4.17 (*)
+│       │       │   │   │   ├── nix v0.25.1
+│       │       │   │   │   │   ├── bitflags v1.3.2
+│       │       │   │   │   │   ├── cfg-if v1.0.0
+│       │       │   │   │   │   ├── libc v0.2.139
+│       │       │   │   │   │   └── memoffset v0.6.5
+│       │       │   │   │   │       [build-dependencies]
+│       │       │   │   │   │       └── autocfg v1.1.0
+│       │       │   │   │   │   [build-dependencies]
+│       │       │   │   │   │   └── autocfg v1.1.0
+│       │       │   │   │   ├── slotmap v1.0.6
+│       │       │   │   │   │   [build-dependencies]
+│       │       │   │   │   │   └── version_check v0.9.4
+│       │       │   │   │   ├── thiserror v1.0.38
+│       │       │   │   │   │   └── thiserror-impl v1.0.38 (proc-macro)
+│       │       │   │   │   │       ├── proc-macro2 v1.0.59 (*)
+│       │       │   │   │   │       ├── quote v1.0.28 (*)
+│       │       │   │   │   │       └── syn v1.0.109 (*)
+│       │       │   │   │   └── vec_map v0.8.2
+│       │       │   │   ├── dlib v0.5.0 (*)
+│       │       │   │   ├── lazy_static v1.4.0
+│       │       │   │   ├── log v0.4.17 (*)
+│       │       │   │   ├── memmap2 v0.5.10 (*)
+│       │       │   │   ├── nix v0.24.3
+│       │       │   │   │   ├── bitflags v1.3.2
+│       │       │   │   │   ├── cfg-if v1.0.0
+│       │       │   │   │   ├── libc v0.2.139
+│       │       │   │   │   └── memoffset v0.6.5 (*)
+│       │       │   │   ├── wayland-client v0.29.5
+│       │       │   │   │   ├── bitflags v1.3.2
+│       │       │   │   │   ├── downcast-rs v1.2.0
+│       │       │   │   │   ├── libc v0.2.139
+│       │       │   │   │   ├── nix v0.24.3 (*)
+│       │       │   │   │   ├── scoped-tls v1.0.1
+│       │       │   │   │   ├── wayland-commons v0.29.5
+│       │       │   │   │   │   ├── nix v0.24.3 (*)
+│       │       │   │   │   │   ├── once_cell v1.17.1
+│       │       │   │   │   │   ├── smallvec v1.10.0
+│       │       │   │   │   │   └── wayland-sys v0.29.5
+│       │       │   │   │   │       ├── dlib v0.5.0 (*)
+│       │       │   │   │   │       └── lazy_static v1.4.0
+│       │       │   │   │   │       [build-dependencies]
+│       │       │   │   │   │       └── pkg-config v0.3.26
+│       │       │   │   │   └── wayland-sys v0.29.5 (*)
+│       │       │   │   │   [build-dependencies]
+│       │       │   │   │   └── wayland-scanner v0.29.5
+│       │       │   │   │       ├── proc-macro2 v1.0.59 (*)
+│       │       │   │   │       ├── quote v1.0.28 (*)
+│       │       │   │   │       └── xml-rs v0.8.4
+│       │       │   │   ├── wayland-cursor v0.29.5
+│       │       │   │   │   ├── nix v0.24.3 (*)
+│       │       │   │   │   ├── wayland-client v0.29.5 (*)
+│       │       │   │   │   └── xcursor v0.3.4
+│       │       │   │   │       └── nom v7.1.3
+│       │       │   │   │           ├── memchr v2.5.0
+│       │       │   │   │           └── minimal-lexical v0.2.1
+│       │       │   │   └── wayland-protocols v0.29.5
+│       │       │   │       ├── bitflags v1.3.2
+│       │       │   │       ├── wayland-client v0.29.5 (*)
+│       │       │   │       └── wayland-commons v0.29.5 (*)
+│       │       │   │       [build-dependencies]
+│       │       │   │       └── wayland-scanner v0.29.5 (*)
+│       │       │   │   [build-dependencies]
+│       │       │   │   └── pkg-config v0.3.26
+│       │       │   └── tiny-skia v0.8.3
+│       │       │       ├── arrayref v0.3.6
+│       │       │       ├── arrayvec v0.7.2
+│       │       │       ├── bytemuck v1.13.1
+│       │       │       ├── cfg-if v1.0.0
+│       │       │       ├── png v0.17.7 (*)
+│       │       │       └── tiny-skia-path v0.8.3
+│       │       │           ├── arrayref v0.3.6
+│       │       │           ├── bytemuck v1.13.1
+│       │       │           └── strict-num v0.1.0
+│       │       ├── smithay-client-toolkit v0.16.0 (*)
+│       │       ├── wayland-client v0.29.5 (*)
+│       │       ├── wayland-commons v0.29.5 (*)
+│       │       ├── wayland-protocols v0.29.5 (*)
+│       │       └── x11-dl v2.21.0 (*)
+│       │       [build-dependencies]
+│       │       ├── cfg_aliases v0.1.1
+│       │       └── wayland-scanner v0.29.5 (*)
+│       │   [build-dependencies]
+│       │   └── cfg_aliases v0.1.1
+│       ├── image v0.24.6 (*)
+│       ├── log v0.4.17 (*)
+│       ├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app) (*)
+│       ├── notan_core v0.10.0 (/home/user/projects/notan/crates/notan_core)
+│       ├── notan_glow v0.10.0 (/home/user/projects/notan/crates/notan_glow)
+│       │   ├── bytemuck v1.13.1
+│       │   ├── glow v0.12.1
+│       │   ├── hashbrown v0.13.2 (*)
+│       │   ├── image v0.24.6 (*)
+│       │   ├── log v0.4.17 (*)
+│       │   └── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics) (*)
+│       ├── raw-window-handle v0.5.2
+│       └── winit v0.28.6 (*)
+├── notan_core v0.10.0 (/home/user/projects/notan/crates/notan_core)
+├── notan_draw v0.10.0 (/home/user/projects/notan/crates/notan_draw)
+│   ├── log v0.4.17 (*)
+│   ├── lyon v1.0.1
+│   │   ├── lyon_algorithms v1.0.3
+│   │   │   ├── lyon_path v1.0.3
+│   │   │   │   ├── lyon_geom v1.0.4
+│   │   │   │   │   ├── arrayvec v0.7.2
+│   │   │   │   │   ├── euclid v0.22.7
+│   │   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   └── num-traits v0.2.15 (*)
+│   │   └── lyon_tessellation v1.0.10
+│   │       ├── float_next_after v0.1.5
+│   │       │   └── num-traits v0.2.15 (*)
+│   │       ├── lyon_path v1.0.3 (*)
+│   │       └── thiserror v1.0.38 (*)
+│   ├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app) (*)
+│   ├── notan_glyph v0.10.0 (/home/user/projects/notan/crates/notan_glyph)
+│   │   ├── bytemuck v1.13.1
+│   │   ├── glyph_brush v0.7.7
+│   │   │   ├── glyph_brush_draw_cache v0.1.5
+│   │   │   │   ├── ab_glyph v0.2.20 (*)
+│   │   │   │   ├── crossbeam-channel v0.5.7
+│   │   │   │   │   ├── cfg-if v1.0.0
+│   │   │   │   │   └── crossbeam-utils v0.8.15
+│   │   │   │   │       └── cfg-if v1.0.0
+│   │   │   │   ├── crossbeam-deque v0.8.3
+│   │   │   │   │   ├── cfg-if v1.0.0
+│   │   │   │   │   ├── crossbeam-epoch v0.9.14
+│   │   │   │   │   │   ├── cfg-if v1.0.0
+│   │   │   │   │   │   ├── crossbeam-utils v0.8.15 (*)
+│   │   │   │   │   │   ├── memoffset v0.8.0
+│   │   │   │   │   │   │   [build-dependencies]
+│   │   │   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   │   │   └── scopeguard v1.1.0
+│   │   │   │   │   │   [build-dependencies]
+│   │   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   │   └── crossbeam-utils v0.8.15 (*)
+│   │   │   │   ├── linked-hash-map v0.5.6
+│   │   │   │   ├── rayon v1.7.0
+│   │   │   │   │   ├── either v1.8.1
+│   │   │   │   │   └── rayon-core v1.11.0
+│   │   │   │   │       ├── crossbeam-channel v0.5.7 (*)
+│   │   │   │   │       ├── crossbeam-deque v0.8.3 (*)
+│   │   │   │   │       ├── crossbeam-utils v0.8.15 (*)
+│   │   │   │   │       └── num_cpus v1.15.0
+│   │   │   │   │           └── libc v0.2.139
+│   │   │   │   └── rustc-hash v1.1.0
+│   │   │   ├── glyph_brush_layout v0.2.3
+│   │   │   │   ├── ab_glyph v0.2.20 (*)
+│   │   │   │   ├── approx v0.5.1
+│   │   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   │   └── xi-unicode v0.3.0
+│   │   │   ├── ordered-float v3.4.0
+│   │   │   │   └── num-traits v0.2.15 (*)
+│   │   │   ├── rustc-hash v1.1.0
+│   │   │   └── twox-hash v1.6.3
+│   │   │       ├── cfg-if v1.0.0
+│   │   │       ├── rand v0.8.5
+│   │   │       │   ├── libc v0.2.139
+│   │   │       │   ├── rand_chacha v0.3.1
+│   │   │       │   │   ├── ppv-lite86 v0.2.17
+│   │   │       │   │   └── rand_core v0.6.4
+│   │   │       │   │       └── getrandom v0.2.9
+│   │   │       │   │           ├── cfg-if v1.0.0
+│   │   │       │   │           └── libc v0.2.139
+│   │   │       │   └── rand_core v0.6.4 (*)
+│   │   │       └── static_assertions v1.1.0
+│   │   ├── log v0.4.17 (*)
+│   │   ├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app) (*)
+│   │   ├── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics) (*)
+│   │   ├── notan_macro v0.10.0 (proc-macro) (/home/user/projects/notan/crates/notan_macro) (*)
+│   │   └── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+│   ├── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics) (*)
+│   ├── notan_macro v0.10.0 (proc-macro) (/home/user/projects/notan/crates/notan_macro) (*)
+│   ├── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+│   ├── notan_text v0.10.0 (/home/user/projects/notan/crates/notan_text)
+│   │   ├── hashbrown v0.13.2 (*)
+│   │   ├── lazy_static v1.4.0
+│   │   ├── log v0.4.17 (*)
+│   │   ├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app) (*)
+│   │   ├── notan_glyph v0.10.0 (/home/user/projects/notan/crates/notan_glyph) (*)
+│   │   ├── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics) (*)
+│   │   ├── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+│   │   └── parking_lot v0.12.1 (*)
+│   ├── serde v1.0.160
+│   │   └── serde_derive v1.0.160 (proc-macro)
+│   │       ├── proc-macro2 v1.0.59 (*)
+│   │       ├── quote v1.0.28 (*)
+│   │       └── syn v2.0.18 (*)
+│   └── serde_json v1.0.96
+│       ├── itoa v1.0.6
+│       ├── ryu v1.0.13
+│       └── serde v1.0.160 (*)
+├── notan_graphics v0.10.0 (/home/user/projects/notan/crates/notan_graphics) (*)
+├── notan_input v0.10.0 (/home/user/projects/notan/crates/notan_input) (*)
+├── notan_log v0.10.0 (/home/user/projects/notan/crates/notan_log)
+│   ├── fern v0.6.2
+│   │   ├── colored v1.9.3
+│   │   │   ├── atty v0.2.14
+│   │   │   │   └── libc v0.2.139
+│   │   │   └── lazy_static v1.4.0
+│   │   └── log v0.4.17 (*)
+│   ├── log v0.4.17 (*)
+│   ├── notan_app v0.10.0 (/home/user/projects/notan/crates/notan_app) (*)
+│   └── time v0.3.21
+│       ├── itoa v1.0.6
+│       ├── libc v0.2.139
+│       ├── num_threads v0.1.6
+│       └── time-core v0.1.1
+├── notan_macro v0.10.0 (proc-macro) (/home/user/projects/notan/crates/notan_macro) (*)
+├── notan_math v0.10.0 (/home/user/projects/notan/crates/notan_math) (*)
+├── notan_random v0.10.0 (/home/user/projects/notan/crates/notan_random)
+│   ├── rand v0.8.5 (*)
+│   └── rand_pcg v0.3.1
+│       └── rand_core v0.6.4 (*)
+└── notan_utils v0.10.0 (/home/user/projects/notan/crates/notan_utils) (*)
+[dev-dependencies]
+├── bytemuck v1.13.1
+└── egui_demo_lib v0.22.0
+    ├── egui v0.22.0
+    │   ├── ahash v0.8.3 (*)
+    │   ├── epaint v0.22.0
+    │   │   ├── ab_glyph v0.2.20 (*)
+    │   │   ├── ahash v0.8.3 (*)
+    │   │   ├── ecolor v0.22.0
+    │   │   ├── emath v0.22.0
+    │   │   ├── nohash-hasher v0.2.0
+    │   │   └── parking_lot v0.12.1 (*)
+    │   └── nohash-hasher v0.2.0
+    ├── egui_extras v0.22.0
+    │   ├── egui v0.22.0 (*)
+    │   └── serde v1.0.160 (*)
+    ├── enum-map v2.4.2
+    │   ├── enum-map-derive v0.11.0 (proc-macro)
+    │   │   ├── proc-macro2 v1.0.59 (*)
+    │   │   ├── quote v1.0.28 (*)
+    │   │   └── syn v1.0.109 (*)
+    │   └── serde v1.0.160 (*)
+    ├── log v0.4.17 (*)
+    └── unicode_names2 v0.6.0

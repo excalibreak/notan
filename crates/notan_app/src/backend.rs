@@ -1,7 +1,7 @@
 use crate::config::WindowConfig;
 use crate::{App, EventIterator};
 use downcast_rs::{impl_downcast, Downcast};
-use futures_core::Future;
+use futures_util::future::Future;
 use futures_util::TryFutureExt;
 use notan_graphics::DeviceBackend;
 

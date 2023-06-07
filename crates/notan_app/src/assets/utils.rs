@@ -1,5 +1,5 @@
 use super::waker::*;
-use futures_core::future::LocalBoxFuture;
+use futures_util::future::LocalBoxFuture;
 use hashbrown::HashMap;
 use parking_lot::RwLock;
 use std::any::{Any, TypeId};

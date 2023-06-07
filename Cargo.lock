@@ -1524,7 +1524,6 @@ version = "0.10.0"
 dependencies = [
  "bytemuck",
  "downcast-rs",
- "futures-core",
  "futures-util",
  "hashbrown 0.13.2",
  "indexmap",

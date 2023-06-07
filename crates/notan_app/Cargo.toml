@@ -24,7 +24,6 @@ notan_audio = { path = "../notan_audio", version = "0.10.0", optional = true }
 downcast-rs = "1.2.0"
 indexmap = "1.9.3"
 futures-util = "0.3.28"
-futures-core = "0.3.28"
 parking_lot = "0.12.1"
 bytemuck = "1.13.1"
 serde = { version = "1.0", optional = true, features = ["serde_derive"] }
