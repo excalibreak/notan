@@ -1,6 +1,6 @@
 use super::asset::Asset;
 use super::utils::{AssetLoadTracker, DoneSignal, LoadWrapper};
-use futures::prelude::*;
+use futures_util::TryFutureExt;
 use hashbrown::HashMap;
 use std::any::TypeId;
 

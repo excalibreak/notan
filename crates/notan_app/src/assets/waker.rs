@@ -1,4 +1,4 @@
-use futures::task::{RawWaker, RawWakerVTable, Waker};
+use std::task::{RawWaker, RawWakerVTable, Waker};
 
 // This is a non operative Waker to simulate an future context
 // To load asset we don't need an executor, on wasm32 web-sys will do the trick, no native the assets are loaded sync

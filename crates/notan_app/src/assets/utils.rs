@@ -1,11 +1,11 @@
 use super::waker::*;
-use futures::future::LocalBoxFuture;
-use futures::task::{Context, Poll};
+use futures_core::future::LocalBoxFuture;
 use hashbrown::HashMap;
 use parking_lot::RwLock;
 use std::any::{Any, TypeId};
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
+use std::task::{Context, Poll};
 
 #[derive(Clone, Debug)]
 pub(crate) struct DoneSignal(pub Arc<AtomicBool>);
